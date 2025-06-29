@@ -1,0 +1,340 @@
+/* --- Main Layout --- */
+.main-bg {
+  background: #f6f8fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.header-bar {
+  background: #19498a;
+  color: #fff;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 26px;
+  gap: 20px;
+}
+.header-bar__logo img {
+  height: 42px;
+  background: #fff;
+  padding: 2px 10px 2px 2px;
+  border-radius: 6px;
+}
+.header-bar__title {
+  font-size: 1.6rem;
+  margin-left: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.header-bar__contact {
+  margin-left: auto;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #e7efef;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.header-link {
+  color: #e7efef;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.header-link:hover {
+  color: #a2f1e0;
+}
+.main-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  max-width: 1500px;
+  margin: 38px auto 0 auto;
+  align-items: flex-start;
+  min-height: 68vh;
+}
+
+/* --- Left Input Card --- */
+.input-card {
+  width: 375px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 14px #0001;
+  padding: 30px 28px 28px 28px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 340px;
+}
+.input-card-title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #19498a;
+}
+.input-card label {
+  display: block;
+  font-size: 1.02rem;
+  color: #282828;
+  margin-bottom: 7px;
+  margin-top: 6px;
+}
+.input-card input,
+.input-card select {
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  border-radius: 7px;
+  border: 1px solid #e2e2e2;
+  padding: 7px 11px;
+  font-size: 1rem;
+  background: #f7faf9;
+  transition: border 0.2s;
+}
+.input-card input:focus,
+.input-card select:focus {
+  outline: none;
+  border-color: #91a7e6;
+  background: #f6faff;
+}
+
+/* --- Run Box (Pipe Run Row) --- */
+.run-box {
+  background: #f4faf5;
+  border-radius: 11px;
+  padding: 15px 18px 20px 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  border: 1.5px solid #e3eee5;
+}
+.input-sub-row {
+  display: flex;
+  gap: 9px;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+.input-sub-row label {
+  margin: 0;
+  flex: 1 1 30%;
+}
+.input-sub-row input,
+.input-sub-row select {
+  width: 100%;
+  margin: 0;
+  min-width: 0;
+}
+.input-sub-row select {
+  min-width: 95px;
+}
+.input-sub-row input[type="number"] {
+  max-width: 120px;
+}
+
+/* --- Fittings List, Horizontal --- */
+.fit-row-box {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.fittings-horizontal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 12px;
+  margin-top: 8px;
+}
+
+.fitting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fitting-label {
+  font-size: 0.95rem;
+  color: #272727;
+  flex: 1;
+  margin: 0 !important;
+}
+
+.fitting-input {
+  width: 60px !important;
+  min-width: 60px !important;
+  max-width: 60px !important;
+  background: #fff !important;
+  padding: 4px 6px !important;
+  font-size: 0.95rem !important;
+  margin: 0 !important;
+  border-radius: 5px !important;
+  border: 1px solid #e2e2e2 !important;
+  text-align: center;
+}
+
+.fitting-input:focus {
+  outline: none;
+  border-color: #91a7e6 !important;
+  background: #f6faff !important;
+}
+
+/* Legacy vertical list styles (keeping for backward compatibility) */
+.fittings-vert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fittings-label {
+  font-size: 1.01rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #272727;
+}
+.fittings-label input[type="number"] {
+  width: 82px;
+  min-width: 70px;
+  background: #fff;
+  margin-left: auto;
+  padding: 5px 8px;
+  font-size: 1rem;
+}
+
+/* --- Add Button --- */
+.add-btn {
+  background: #19893f;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 7px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.add-btn:hover {
+  background: #13722f;
+}
+
+/* --- Output Card --- */
+.output-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 14px #0001;
+  padding: 30px 24px 26px 24px;
+  min-height: 410px;
+}
+.output-card-wide {
+  min-width: 500px;
+  width: 75vw;
+}
+
+/* --- Table --- */
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  font-size: 1.03rem;
+}
+.summary-table th,
+.summary-table td {
+  border: 1px solid #e3e3e3;
+  padding: 7px 5px;
+  text-align: center;
+}
+.summary-table th {
+  background: #f1f8fe;
+  font-weight: 600;
+}
+.summary-table .total-row {
+  background: #e6f3fd;
+  font-weight: 700;
+}
+.del-row-btn {
+  color: #d92a2a;
+  font-size: 1.22rem;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  background: none;
+  line-height: 1;
+  margin-left: 6px;
+  padding: 0 4px;
+  transition: color 0.2s;
+}
+.del-row-btn:hover {
+  color: #a10e0e;
+}
+
+/* --- Diagram --- */
+.diagram-bg {
+  width: 100%;
+  min-width: 220px;
+  background: #f6fafd;
+  border: 1px solid #dde;
+  border-radius: 12px;
+  margin-top: 9px;
+}
+
+/* --- Miscellaneous --- */
+.footer-notes,
+.disclaimer-bar {
+  max-width: 97vw;
+  font-size: 0.98rem;
+}
+.footer-notes {
+  margin-top: 38px;
+  color: #444;
+  background: #e7f2ff;
+  padding: 15px 36px;
+  border-radius: 8px;
+}
+.disclaimer-bar {
+  background: #fce5e4;
+  color: #be2222;
+  border: 1px solid #e7b6b6;
+  border-radius: 7px;
+  margin: 18px auto 6px auto;
+  padding: 10px 18px;
+  font-size: 1.08rem;
+}
+.disclaimer-link {
+  color: #2357b5;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.disclaimer-link:hover {
+  color: #0bb26a;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1050px) {
+  .main-flex {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 97vw;
+  }
+  .input-card,
+  .output-card,
+  .output-card-wide {
+    min-width: unset;
+    width: 97vw;
+  }
+
+  /* Adjust fittings grid for smaller screens */
+  .fittings-horizontal-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fittings-horizontal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fitting-item {
+    padding: 2px 0;
+  }
+}
